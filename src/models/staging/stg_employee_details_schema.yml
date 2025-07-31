@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: employee_source
+    database: dbt_poc  
+    schema: raw  
+    tables:
+      - name: employee_details
