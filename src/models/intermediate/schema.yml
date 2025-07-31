@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: order_payment_method_with_jinja
+    description: "This model aggregates payment methods by order using Jinja templating."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+        data_type: number(38,0)
+      - name: bank_transfer_amount
+        description: "Total amount paid via bank transfer."
+        data_type: number(38,2)
+      - name: credit_card_amount
+        description: "Total amount paid via credit card."
+        data_type: number(38,2)
+      - name: paypal_amount
+        description: "Total amount paid via PayPal."
+        data_type: number(38,2)
+      - name: gift_card_amount
+        description: "Total amount paid via gift card."
+        data_type: number(38,2)
